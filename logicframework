@@ -448,6 +448,5 @@ procedure main() {
 
     local elapsed_time = os.clock() - x
     if (not sat(T2,result[1])) then printunsatcore(T2,result[1]) end
-    if (not sat(T3,result[1])) then printunsatcore(T3,result[1]) end
     print(string.format("Elapsed time to find models : %.2f sec", elapsed_time))
 }
