@@ -20,7 +20,7 @@ include <mx>
  	
     // The different components in the system
     type HardwareComponent isa SystemPart 
-	Critical(HardwareComponent)
+    Critical(HardwareComponent)
   
     // Modules
     type SoftwareModule isa SystemPart
@@ -29,7 +29,7 @@ include <mx>
     // HardwareComponent specs
     type Version constructed from {Version(int), Version(int,int), Version(int,int,int), Version(int,int,int,int)}
     
-	type Product constructed from {ABB_AC, ABB_SREA, Adcon_Telemetry, Adcon_Telemetry_addVANTAGE, Advantech_ADAM, Advantech_Broadwin_WebAccess, Advantech_ISSymbol_ActiveX, Advantech_Modbus_RTU, Advantech_Modbus_TCP, Advantech_Studio, Allied_Telesis_IE, ARC_Informatique_PcVue, Automated_Solutions, AzeoTech_DAQFactory, BB_ELECTRONICS_Conel, BB_ELECTRONICS_CR10, BB_ELECTRONICS_ER75i, BB_ELECTRONICS_LR77, BB_ELECTRONICS_SPECTRE, BB_ELECTRONICS_UCR11, BB_ELECTRONICS_UR5i, BB_ELECTRONICS_XR5i, Beckhoff_Automation_CX, Beckhoff_Automation_IPC, Beckhoff_TwinCAT, Bintec_Elmeg, Certec_atvise, Citect, CitectSCADA_Reports, CoDeSys_Web_Server, Contemporary_Control_Systems_BASRT, Cybectec_DNP3_Master_Server, Datasensor_UR5i, Deif_AWC, Digi_CM, Digi_Connect_WAN, Digi_Transport_WR, DigiOne_IAP_Serial, Ecava_IntegraXor, Echelon_iLON_Smartserver, Emerson_DL8000, Emerson_ROC800, Emerson_ROC800L, Emerson_ControlWave_Micro_Quick, Emerson_IPKVM_Avocent_MergePoint_Unity, Emerson_Ovation_DCS, Emerson_Smart_Wireless_Gateway, Endress_Hauser_Fieldgate_FXA, ENTES_EMG, eWON, Fultek_WinTr, Galil_RIO, Hirschmann_MACH, Hirschmann_MICE, Hirschmann_OCTOPUS, Hirschmann_RS, Hirschmann_RSP, IBM, ICONICS_Genesis32, ICONICS_Genesis64, Intellicom_NetBiter_webSCADA, IOServer, IRAI_AUTOMGEN, Kessler_Ellis_Infilink, Koyo_ECOM, Linksys_WRT, Macq, MatrikonOPC, MeasureSoft_ScadaPro, MICROSYS_PROMOTIC, Mitsubishi_MC_WorX_Suite, Mitsubishi_Qn, Moxa_Device_Manager, Moxa_EDS, Netcomm_Wireless, Nordex_Control_2, Omron_IA_CJ1M, Omron_NS, Open_Automation_Software_OPC_SystemsNET, Optima, Optima_APIFTP, Ouman_EHnet, Phasefale_Controls_JouleTemp, ProFace_GP, ProFace_ProServer_EX, Proficy, Progea_Movicon, Progea_Movicon_PowerHMI, Prosoft_Technology_ICX, QNX_Phditto, QNX_Phrelay, QNX_Phwindows, RealFlex_RealWin, Rockwell_Automation_ControlLogix, Rockwell_Automation_EDM, Rockwell_Automation_FactoryTalk, Rockwell_Automation_RADES, Rockwell_PLC5, RuggedCom, SAIA_PCD, Samsung_Integrated_Management_System_DMS, SCADA_Engine_BACnet, Scadatec_Limited_Procyon, ScadaTEC_Modbus_TagServer, Schneider_Electric_ETG, Schneider_Electric_M, Schneider_Electric_Modicon_M, Schneider_Electric_Modicon_Premium,  Schneider_Electric_Modicon_Quantum, Schneider_Electric_OPC_Factory_Server, Schneider_Electric_PM, Schneider_Electric_Powerlogic, Schneider_Electric_TSX_ETG, Schweitzer_SEL, Sielco_Sistemi_Winlog, Siemens_Climatix, Siemens_COMOS, Siemens_Ruggedcom, Siemens_S7, Siemens_Simatic_S7, Siemens_Scalance, Siemens_SIMATIC_WinCC, Siemens_SIMATIC_WinCC_Flexible_Runtime, Siemens_Tecnomatix_FactoryLink, SIMATIC_STEP_7, Sierra_Wireless_AirLink, SpecView, STIGSS, STTermis, Stulz_GmbH, Sunway_Force_Control, TAC_Xenta, Tecomat_Foxtrot, TOPServer, Triangle_Research_Nano_10, Turck_BL, Unitronics_UNIOPC_Server, Vijeo, WAGO_IO, WAGO_IPC, WellinTech_KingHistorian, WellinTech_KingSCADA, WellinTech_KingView, Westermo_MRD, Westermo_TDW, Wind_River_VxWorks, WindowsXP, Wonderware_InTouch, Wonderware_SuiteLink, xArrow}
+    type Product constructed from {ABB_AC, ABB_SREA, Adcon_Telemetry, Adcon_Telemetry_addVANTAGE, Advantech_ADAM, Advantech_Broadwin_WebAccess, Advantech_ISSymbol_ActiveX, Advantech_Modbus_RTU, Advantech_Modbus_TCP, Advantech_Studio, Allied_Telesis_IE, ARC_Informatique_PcVue, Automated_Solutions, AzeoTech_DAQFactory, BB_ELECTRONICS_Conel, BB_ELECTRONICS_CR10, BB_ELECTRONICS_ER75i, BB_ELECTRONICS_LR77, BB_ELECTRONICS_SPECTRE, BB_ELECTRONICS_UCR11, BB_ELECTRONICS_UR5i, BB_ELECTRONICS_XR5i, Beckhoff_Automation_CX, Beckhoff_Automation_IPC, Beckhoff_TwinCAT, Bintec_Elmeg, Certec_atvise, Citect, CitectSCADA_Reports, CoDeSys_Web_Server, Contemporary_Control_Systems_BASRT, Cybectec_DNP3_Master_Server, Datasensor_UR5i, Deif_AWC, Digi_CM, Digi_Connect_WAN, Digi_Transport_WR, DigiOne_IAP_Serial, Ecava_IntegraXor, Echelon_iLON_Smartserver, Emerson_DL8000, Emerson_ROC800, Emerson_ROC800L, Emerson_ControlWave_Micro_Quick, Emerson_IPKVM_Avocent_MergePoint_Unity, Emerson_Ovation_DCS, Emerson_Smart_Wireless_Gateway, Endress_Hauser_Fieldgate_FXA, ENTES_EMG, eWON, Fultek_WinTr, Galil_RIO, Hirschmann_MACH, Hirschmann_MICE, Hirschmann_OCTOPUS, Hirschmann_RS, Hirschmann_RSP, IBM, ICONICS_Genesis32, ICONICS_Genesis64, Intellicom_NetBiter_webSCADA, IOServer, IRAI_AUTOMGEN, Kessler_Ellis_Infilink, Koyo_ECOM, Linksys_WRT, Macq, MatrikonOPC, MeasureSoft_ScadaPro, MICROSYS_PROMOTIC, Mitsubishi_MC_WorX_Suite, Mitsubishi_Qn, Moxa_Device_Manager, Moxa_EDS, Netcomm_Wireless, Nordex_Control_2, Omron_IA_CJ1M, Omron_NS, Open_Automation_Software_OPC_SystemsNET, Optima, Optima_APIFTP, Ouman_EHnet, Phasefale_Controls_JouleTemp, ProFace_GP, ProFace_ProServer_EX, Proficy, Progea_Movicon, Progea_Movicon_PowerHMI, Prosoft_Technology_ICX, QNX_Phditto, QNX_Phrelay, QNX_Phwindows, RealFlex_RealWin, Rockwell_Automation_ControlLogix, Rockwell_Automation_EDM, Rockwell_Automation_FactoryTalk, Rockwell_Automation_RADES, Rockwell_PLC5, RuggedCom, SAIA_PCD, Samsung_Integrated_Management_System_DMS, SCADA_Engine_BACnet, Scadatec_Limited_Procyon, ScadaTEC_Modbus_TagServer, Schneider_Electric_ETG, Schneider_Electric_M, Schneider_Electric_Modicon_M, Schneider_Electric_Modicon_Premium,  Schneider_Electric_Modicon_Quantum, Schneider_Electric_OPC_Factory_Server, Schneider_Electric_PM, Schneider_Electric_Powerlogic, Schneider_Electric_TSX_ETG, Schweitzer_SEL, Sielco_Sistemi_Winlog, Siemens_Climatix, Siemens_COMOS, Siemens_Ruggedcom, Siemens_S7, Siemens_Simatic_S7, Siemens_Scalance, Siemens_SIMATIC_WinCC, Siemens_SIMATIC_WinCC_Flexible_Runtime, Siemens_Tecnomatix_FactoryLink, SIMATIC_STEP_7, Sierra_Wireless_AirLink, SpecView, STIGSS, STTermis, Stulz_GmbH, Sunway_Force_Control, TAC_Xenta, Tecomat_Foxtrot, TOPServer, Triangle_Research_Nano_10, Turck_BL, Unitronics_UNIOPC_Server, Vijeo, WAGO_IO, WAGO_IPC, WellinTech_KingHistorian, WellinTech_KingSCADA, WellinTech_KingView, Westermo_MRD, Westermo_TDW, Wind_River_VxWorks, WindowsXP, Wonderware_InTouch, Wonderware_SuiteLink, xArrow}
  	
     ComponentSpec(HardwareComponent, Product, Version)
     ModuleSpec(SoftwareModule, Product, Version)
@@ -43,14 +43,14 @@ include <mx>
 	
     type PhysicalChannel
     PhysicalConnection(HardwareComponent, PhysicalChannel, HardwareComponent)
-	Path(HardwareComponent, HardwareComponent)
+    Path(HardwareComponent, HardwareComponent)
 	
     type RemoteChannel
     RemoteConnection(SoftwareModule, RemoteChannel, SoftwareModule)
 	
     type Network
     ComponentLocation(HardwareComponent): Network
-	Protected(Network)
+    Protected(Network)
 	
     //----------------------------------------------------------------------------
     // Stakeholders
@@ -58,54 +58,54 @@ include <mx>
 	
     // The different usergroups in the system
     type User
-	Attacker(User)
+    Attacker(User)
 	
-	CanAccess(User,HardwareComponent)
+    CanAccess(User,HardwareComponent)
 	
     //----------------------------------------------------------------------------
     // Component and Module Vulnerabilities
     //----------------------------------------------------------------------------	
   
     // Vulnerabilities or weaknesses
-	type Vulnerability constructed from {ArbitraryCodeExecution, ArbitraryMemoryWrite, BruteForcePassword, BufferOverflow, CleartextPassword, Compromised, CrossSiteScripting, DataLeakage, DefaultPassword, DictionaryPassword, DirectoryTraversal, DLLHijacking, DoS, EavesDrop, FewCharacterTypes, FormatString, HardcodedRSAKey, HeapOverflow, ImproperInputValidation, InformationDisclosure, InsecureHash, InsecureMethodCall, InsecurePasswordEncryption, InsecurePasswordStorage, IntegerOverflow, LossOfIntegrity, ManInTheMiddle, MemoryCorruption, OpenPorts, OutOfBoundsRead, OverwriteArbitraryFile, PlaintextAuthentication, PrivilegeEscalation, RemoteCodeExecution, RemoteHeapCorruption, ReplayAttack, RPCExploit, Sabotage, ShortPassword, Spoof, StackOverflow, StructuredExceptionHandler, UnauthenticatedSQL, UnauthorizedAccess, UnsafeMediaAccess, UnusedServices, UseAfterFree}
+    type Vulnerability constructed from {ArbitraryCodeExecution, ArbitraryMemoryWrite, BruteForcePassword, BufferOverflow, CleartextPassword, Compromised, CrossSiteScripting, DataLeakage, DefaultPassword, DictionaryPassword, DirectoryTraversal, DLLHijacking, DoS, EavesDrop, FewCharacterTypes, FormatString, HardcodedRSAKey, HeapOverflow, ImproperInputValidation, InformationDisclosure, InsecureHash, InsecureMethodCall, InsecurePasswordEncryption, InsecurePasswordStorage, IntegerOverflow, LossOfIntegrity, ManInTheMiddle, MemoryCorruption, OpenPorts, OutOfBoundsRead, OverwriteArbitraryFile, PlaintextAuthentication, PrivilegeEscalation, RemoteCodeExecution, RemoteHeapCorruption, ReplayAttack, RPCExploit, Sabotage, ShortPassword, Spoof, StackOverflow, StructuredExceptionHandler, UnauthenticatedSQL, UnauthorizedAccess, UnsafeMediaAccess, UnusedServices, UseAfterFree}
     HasVulnerability(SystemPart, Vulnerability)
 	
-	// Predicates used to model the ICS CERT vulnerability database
-	CertTupleALL(Product,Version,Vulnerability)
+    // Predicates used to model the ICS CERT vulnerability database
+    CertTupleALL(Product,Version,Vulnerability)
     CertTupleEQ(Product,Version,Vulnerability)
     CertTupleGT(Product,Version,Vulnerability)
     CertTupleLT(Product,Version,Vulnerability)
 	
-	// Predicates used to model the SCADA Strangelove group vulnerability database
+    // Predicates used to model the SCADA Strangelove group vulnerability database
     DefaultCredentialsTupleALL(Product,Version)	
-	DefaultCredentialsTupleEQ(Product,Version)	
-	DefaultCredentialsTupleGT(Product,Version)	
-	DefaultCredentialsTupleLT(Product,Version)	
+    DefaultCredentialsTupleEQ(Product,Version)	
+    DefaultCredentialsTupleGT(Product,Version)	
+    DefaultCredentialsTupleLT(Product,Version)	
 	
-	// Helper predicates used to order versions
-	LowerVersion(Version,Version)
-	EqualVersion(Version,Version)
-	HigherVersion(Version,Version)
+    // Helper predicates used to order versions
+    LowerVersion(Version,Version)
+    EqualVersion(Version,Version)
+    HigherVersion(Version,Version)
 	
     // Used to link component vulnerabilities to system vulnerabilities
-	HasDoSVuln(SystemPart)
-	HasPrivilegeEscalationVuln(SoftwareModule)
-	HasAuthCompromisedVuln(SoftwareModule)
-	HasCodeExecutionVuln(SoftwareModule)
-	HasDataLeakageVuln(HardwareComponent)
+    HasDoSVuln(SystemPart)
+    HasPrivilegeEscalationVuln(SoftwareModule)
+    HasAuthCompromisedVuln(SoftwareModule)
+    HasCodeExecutionVuln(SoftwareModule)
+    HasDataLeakageVuln(HardwareComponent)
 
     // Simulations
     SimulateDoS(SystemPart)
     SimulatePrivilegeEscalation(SoftwareModule)
     SimulateAuthCompromised(SoftwareModule)
-	SimulateCodeExecution(SoftwareModule)
+    SimulateCodeExecution(SoftwareModule)
     SimulateDataLeakage(HardwareComponent)
 	
-	// Vulnerability Categories
-	DenialOfService(SystemPart)
+    // Vulnerability Categories
+    DenialOfService(SystemPart)
     PrivilegeEscalation(SoftwareModule)
     AuthCompromised(SoftwareModule)
-	CodeExecution(SoftwareModule)
+    CodeExecution(SoftwareModule)
     DataLeakage(HardwareComponent)
  	
     //----------------------------------------------------------------------------
@@ -125,19 +125,19 @@ include <mx>
     type Operation constructed from {Read, Modify}
     Permission(User, Parameter, Operation)
 	
-	// Process tasks
+    // Process tasks
     StorageTask(HardwareComponent, Parameter)
     ControlTask(SoftwareModule,Parameter)
-	CommunicationTask(HardwareComponent, Parameter, HardwareComponent)
+    CommunicationTask(HardwareComponent, Parameter, HardwareComponent)
 	
     // Helper predicates
     ModifyParameter(User, SoftwareModule, Parameter)
-	ReadParameter(User, Parameter)
+    ReadParameter(User, Parameter)
 	
-	// Output
-	CompromisedStorageTask(HardwareComponent, Parameter)
-	CompromisedControlTask(SoftwareModule, Parameter)
-	CompromisedCommunicationTask(HardwareComponent, Parameter, HardwareComponent)
+    // Output
+    CompromisedStorageTask(HardwareComponent, Parameter)
+    CompromisedControlTask(SoftwareModule, Parameter)
+    CompromisedCommunicationTask(HardwareComponent, Parameter, HardwareComponent)
 
     //----------------------------------------------------------------------------
     // Authentication and Authorization
@@ -164,7 +164,7 @@ include <mx>
  	
     // Auth chains between modules
     ModulePrerequisite(SoftwareModule,SoftwareModule)
-	ModulePrerequisiteChain(SoftwareModule,SoftwareModule)
+    ModulePrerequisiteChain(SoftwareModule,SoftwareModule)
 	
     // Credentials a user possesses
     HasCredential(User, Credential)
@@ -182,7 +182,7 @@ include <mx>
     // A predicate used to model that a user has obtained a credential which is not in his initial Credential SetId
     ObtainsCredential(User, Credential)
 	
-	// A predicate expressing that a user has physical access to a component
+    // A predicate expressing that a user has physical access to a component
     PhysicalAccess(User, HardwareComponent)
 	
     // A predicate expressing that a user has remote access to a component. This entails that the user has access to the network the component is located in, or there is a remote connection from a component in a different network which can be used
@@ -198,126 +198,126 @@ include <mx>
  
  theory T : V {
  	
- 	//----------------------------------------------------------------------------
-  	// Component vulnerabilities
-  	//---------------------------------------------------------------------------- 	
+    //----------------------------------------------------------------------------
+    // Component vulnerabilities
+    //---------------------------------------------------------------------------- 	
  	
- 	{
+    {
  	
- 	// ICS CERT Alerts
-  	! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & CertTupleEQ(p,v2,y) & EqualVersion(v,v2)).   
+    // ICS CERT Alerts
+    ! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & CertTupleEQ(p,v2,y) & EqualVersion(v,v2)).   
         
-  	! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & CertTupleLT(p,v2,y) & LowerVersion(v,v2)).  
+    ! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & CertTupleLT(p,v2,y) & LowerVersion(v,v2)).  
         
-  	! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & CertTupleGT(p,v2,y) & HigherVersion(v,v2)).  
+    ! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & CertTupleGT(p,v2,y) & HigherVersion(v,v2)).  
         
-  	! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & CertTupleALL(p,v2,y)).  
+    ! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & CertTupleALL(p,v2,y)).  
 	
-  	! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & CertTupleEQ(p,v2,y) & EqualVersion(v,v2)).   
+    ! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & CertTupleEQ(p,v2,y) & EqualVersion(v,v2)).   
         
-  	! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & CertTupleLT(p,v2,y) & LowerVersion(v,v2)).  
+    ! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & CertTupleLT(p,v2,y) & LowerVersion(v,v2)).  
         
-  	! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & CertTupleGT(p,v2,y) & HigherVersion(v,v2)).  
+    ! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & CertTupleGT(p,v2,y) & HigherVersion(v,v2)).  
         
-  	! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & CertTupleALL(p,v2,y)).  
+    ! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & CertTupleALL(p,v2,y)).  
         
     // Scadastrangelove components
-  	! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleEQ(p,v2,y) & EqualVersion(v,v2)).   
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleEQ(p,v2,y) & EqualVersion(v,v2)).   
         
-  	! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleLT(p,v2,y) & LowerVersion(v,v2)).  
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleLT(p,v2,y) & LowerVersion(v,v2)).  
         
-  	! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleGT(p,v2,y) & HigherVersion(v,v2)).  
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleGT(p,v2,y) & HigherVersion(v,v2)).  
         
-  	! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleALL(p,v2,y)).  
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleALL(p,v2,y)).  
 	
-  	! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleEQ(p,v2,y) & EqualVersion(v,v2)).   
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleEQ(p,v2,y) & EqualVersion(v,v2)).   
         
-  	! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleLT(p,v2,y) & LowerVersion(v,v2)).  
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleLT(p,v2,y) & LowerVersion(v,v2)).  
         
-  	! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleGT(p,v2,y) & HigherVersion(v,v2)).  
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleGT(p,v2,y) & HigherVersion(v,v2)).  
         
-  	! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleALL(p,v2,y)).  
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleALL(p,v2,y)).  
 	 
-	// Rules to order versions
-	// Equal Versions
-	! x[int] y[int] : EqualVersion(Version(x),Version(y)) <- x = y.
+    // Rules to order versions
+    // Equal Versions
+    ! x[int] y[int] : EqualVersion(Version(x),Version(y)) <- x = y.
 	
-	! x[int] y[int] a[int] b[int]: EqualVersion(Version(x,a),Version(y,b)) <- x = y & a = b.
+    ! x[int] y[int] a[int] b[int]: EqualVersion(Version(x,a),Version(y,b)) <- x = y & a = b.
 	
-	! x[int] y[int] a[int] b[int] c[int] d[int]: EqualVersion(Version(x,a,c),Version(y,b,c)) <- x = y & a = b & c = d.
+    ! x[int] y[int] a[int] b[int] c[int] d[int]: EqualVersion(Version(x,a,c),Version(y,b,c)) <- x = y & a = b & c = d.
 	
-	! x[int] y[int] a[int] b[int] c[int] d[int] e[int] f[int]: EqualVersion(Version(x,a,c,e),Version(y,b,c,f)) <- x = y & a = b & c = d & e = f.
+    ! x[int] y[int] a[int] b[int] c[int] d[int] e[int] f[int]: EqualVersion(Version(x,a,c,e),Version(y,b,c,f)) <- x = y & a = b & c = d & e = f.
 	 
-	// Lower Versions
-	! x[int] y[int] : LowerVersion(Version(x),Version(y)) <- x < y.
+    // Lower Versions
+    ! x[int] y[int] : LowerVersion(Version(x),Version(y)) <- x < y.
 	
-	! x[int] y[int] a[int]: LowerVersion(Version(x),Version(y,a)) <- x <= y.	
+    ! x[int] y[int] a[int]: LowerVersion(Version(x),Version(y,a)) <- x <= y.	
 	
-	! x[int] y[int] a[int] b[int]: LowerVersion(Version(x),Version(y,a,b)) <- x <= y.	
+    ! x[int] y[int] a[int] b[int]: LowerVersion(Version(x),Version(y,a,b)) <- x <= y.	
 
-	! x[int] y[int] a[int] b[int] c[int]: LowerVersion(Version(x),Version(y,a,b,c)) <- x <= y.		
+    ! x[int] y[int] a[int] b[int] c[int]: LowerVersion(Version(x),Version(y,a,b,c)) <- x <= y.		
 	
-	! x[int] y[int] a[int]: LowerVersion(Version(x,a),Version(y)) <- x < y.
+    ! x[int] y[int] a[int]: LowerVersion(Version(x,a),Version(y)) <- x < y.
 	
-	! x[int] y[int] a[int] b[int]: LowerVersion(Version(x,a),Version(y,b)) <- (x < y) | (x = y & a < b).	
+    ! x[int] y[int] a[int] b[int]: LowerVersion(Version(x,a),Version(y,b)) <- (x < y) | (x = y & a < b).	
 	
-	! x[int] y[int] a[int] b[int] c[int]: LowerVersion(Version(x,a),Version(y,b,c)) <- (x < y) | (x = y & a <= b).
+    ! x[int] y[int] a[int] b[int] c[int]: LowerVersion(Version(x,a),Version(y,b,c)) <- (x < y) | (x = y & a <= b).
 
-	! x[int] y[int] a[int] b[int] c[int] d[int]: LowerVersion(Version(x,a),Version(y,b,c,d)) <- (x < y) | (x = y & a <= b).		
+    ! x[int] y[int] a[int] b[int] c[int] d[int]: LowerVersion(Version(x,a),Version(y,b,c,d)) <- (x < y) | (x = y & a <= b).		
 	
-	! x[int] y[int] a[int] b[int]: LowerVersion(Version(x,a,b),Version(y)) <- x < y.
+    ! x[int] y[int] a[int] b[int]: LowerVersion(Version(x,a,b),Version(y)) <- x < y.
 	
-	! x[int] y[int] a[int] b[int] c[int]: LowerVersion(Version(x,a,b),Version(y,c)) <- (x < y) | (x = y & a < c).
+    ! x[int] y[int] a[int] b[int] c[int]: LowerVersion(Version(x,a,b),Version(y,c)) <- (x < y) | (x = y & a < c).
 	
-	! x[int] y[int] a[int] b[int] c[int] d[int]: LowerVersion(Version(x,a,b),Version(y,c,d)) <- (x < y) | (x = y & a < c) | (x = y & a = c & b < d).
+    ! x[int] y[int] a[int] b[int] c[int] d[int]: LowerVersion(Version(x,a,b),Version(y,c,d)) <- (x < y) | (x = y & a < c) | (x = y & a = c & b < d).
 
-	! x[int] y[int] a[int] b[int] c[int] d[int] e[int]: LowerVersion(Version(x,a,b),Version(y,c,d,e)) <- (x < y) | (x = y & a < c) | (x = y & a = c & b <= d).
+    ! x[int] y[int] a[int] b[int] c[int] d[int] e[int]: LowerVersion(Version(x,a,b),Version(y,c,d,e)) <- (x < y) | (x = y & a < c) | (x = y & a = c & b <= d).
 	
-	! x[int] y[int] a[int] b[int] c[int]: LowerVersion(Version(x,a,b,c),Version(y)) <- x < y.
+    ! x[int] y[int] a[int] b[int] c[int]: LowerVersion(Version(x,a,b,c),Version(y)) <- x < y.
 	
-	! x[int] y[int] a[int] b[int] c[int] d[int]: LowerVersion(Version(x,a,b,c),Version(y,d)) <- (x < y) | (x = y & a < d).	
+    ! x[int] y[int] a[int] b[int] c[int] d[int]: LowerVersion(Version(x,a,b,c),Version(y,d)) <- (x < y) | (x = y & a < d).	
 	
-	! x[int] y[int] a[int] b[int] c[int] d[int] e[int]: LowerVersion(Version(x,a,b,c),Version(y,d,e)) <- (x < y) | (x = y & a < d) | (x = y & a = d & b < e).	
+    ! x[int] y[int] a[int] b[int] c[int] d[int] e[int]: LowerVersion(Version(x,a,b,c),Version(y,d,e)) <- (x < y) | (x = y & a < d) | (x = y & a = d & b < e).	
 
-	! x[int] y[int] a[int] b[int] c[int] d[int] e[int] f[int]: LowerVersion(Version(x,a,b,c),Version(y,d,e,f)) <- (x < y) | (x = y & a < d) | (x = y & a = d & b < e) | (x = y & a = d & b = e & c < f).
+    ! x[int] y[int] a[int] b[int] c[int] d[int] e[int] f[int]: LowerVersion(Version(x,a,b,c),Version(y,d,e,f)) <- (x < y) | (x = y & a < d) | (x = y & a = d & b < e) | (x = y & a = d & b = e & c < f).
 
-	// Higher Versions
-	! x[int] y[int] : HigherVersion(Version(x),Version(y)) <- x > y.
+    // Higher Versions
+    ! x[int] y[int] : HigherVersion(Version(x),Version(y)) <- x > y.
 	
-	! x[int] y[int] a[int]: HigherVersion(Version(x),Version(y,a)) <- x > y.	
+    ! x[int] y[int] a[int]: HigherVersion(Version(x),Version(y,a)) <- x > y.	
 	
-	! x[int] y[int] a[int] b[int]: HigherVersion(Version(x),Version(y,a,b)) <- x > y.	
+    ! x[int] y[int] a[int] b[int]: HigherVersion(Version(x),Version(y,a,b)) <- x > y.	
 
-	! x[int] y[int] a[int] b[int] c[int]: HigherVersion(Version(x),Version(y,a,b,c)) <- x > y.		
+    ! x[int] y[int] a[int] b[int] c[int]: HigherVersion(Version(x),Version(y,a,b,c)) <- x > y.		
 	
-	! x[int] y[int] a[int]: HigherVersion(Version(x,a),Version(y)) <- x >= y.
+    ! x[int] y[int] a[int]: HigherVersion(Version(x,a),Version(y)) <- x >= y.
 	
-	! x[int] y[int] a[int] b[int]: HigherVersion(Version(x,a),Version(y,b)) <- (x > y) | (x = y & a > b).	
+    ! x[int] y[int] a[int] b[int]: HigherVersion(Version(x,a),Version(y,b)) <- (x > y) | (x = y & a > b).	
 	
-	! x[int] y[int] a[int] b[int] c[int]: HigherVersion(Version(x,a),Version(y,b,c)) <- (x > y) | (x = y & a > b).
+    ! x[int] y[int] a[int] b[int] c[int]: HigherVersion(Version(x,a),Version(y,b,c)) <- (x > y) | (x = y & a > b).
 
-	! x[int] y[int] a[int] b[int] c[int] d[int]: HigherVersion(Version(x,a),Version(y,b,c,d)) <- (x > y) | (x = y & a > b).		
+    ! x[int] y[int] a[int] b[int] c[int] d[int]: HigherVersion(Version(x,a),Version(y,b,c,d)) <- (x > y) | (x = y & a > b).		
 	
-	! x[int] y[int] a[int] b[int]: HigherVersion(Version(x,a,b),Version(y)) <- x >= y.
+    ! x[int] y[int] a[int] b[int]: HigherVersion(Version(x,a,b),Version(y)) <- x >= y.
 	
-	! x[int] y[int] a[int] b[int] c[int]: HigherVersion(Version(x,a,b),Version(y,c)) <- (x > y) | (x = y & a >= c).
+    ! x[int] y[int] a[int] b[int] c[int]: HigherVersion(Version(x,a,b),Version(y,c)) <- (x > y) | (x = y & a >= c).
 	
-	! x[int] y[int] a[int] b[int] c[int] d[int]: HigherVersion(Version(x,a,b),Version(y,c,d)) <- (x > y) | (x = y & a > c) | (x = y & a = c & b > d).
+    ! x[int] y[int] a[int] b[int] c[int] d[int]: HigherVersion(Version(x,a,b),Version(y,c,d)) <- (x > y) | (x = y & a > c) | (x = y & a = c & b > d).
 
-	! x[int] y[int] a[int] b[int] c[int] d[int] e[int]: HigherVersion(Version(x,a,b),Version(y,c,d,e)) <- (x > y) | (x = y & a > c) | (x = y & a = c & b > d).
+    ! x[int] y[int] a[int] b[int] c[int] d[int] e[int]: HigherVersion(Version(x,a,b),Version(y,c,d,e)) <- (x > y) | (x = y & a > c) | (x = y & a = c & b > d).
 	
-	! x[int] y[int] a[int] b[int] c[int]: HigherVersion(Version(x,a,b,c),Version(y)) <- x >= y.
+    ! x[int] y[int] a[int] b[int] c[int]: HigherVersion(Version(x,a,b,c),Version(y)) <- x >= y.
 	
-	! x[int] y[int] a[int] b[int] c[int] d[int]: HigherVersion(Version(x,a,b,c),Version(y,d)) <- (x > y) | (x = y & a >= d).	
+    ! x[int] y[int] a[int] b[int] c[int] d[int]: HigherVersion(Version(x,a,b,c),Version(y,d)) <- (x > y) | (x = y & a >= d).	
 	
-	! x[int] y[int] a[int] b[int] c[int] d[int] e[int]: HigherVersion(Version(x,a,b,c),Version(y,d,e)) <- (x > y) | (x = y & a > d) | (x = y & a = d & b >= e).	
+    ! x[int] y[int] a[int] b[int] c[int] d[int] e[int]: HigherVersion(Version(x,a,b,c),Version(y,d,e)) <- (x > y) | (x = y & a > d) | (x = y & a = d & b >= e).	
 
-	! x[int] y[int] a[int] b[int] c[int] d[int] e[int] f[int]: HigherVersion(Version(x,a,b,c),Version(y,d,e,f)) <- (x > y) | (x = y & a > d) | (x = y & a = d & b > e) | (x = y & a = d & b = e & c > f).		
- 	}
+    ! x[int] y[int] a[int] b[int] c[int] d[int] e[int] f[int]: HigherVersion(Version(x,a,b,c),Version(y,d,e,f)) <- (x > y) | (x = y & a > d) | (x = y & a = d & b > e) | (x = y & a = d & b = e & c > f).		
+    }
  	
-	//----------------------------------------------------------------------------
-  	// Linking component vulnerabilities to impact categories
-  	//----------------------------------------------------------------------------
+    //----------------------------------------------------------------------------
+    // Linking component vulnerabilities to impact categories
+    //----------------------------------------------------------------------------
  	
     {
         
@@ -343,8 +343,8 @@ include <mx>
     }
 
     //----------------------------------------------------------------------------
-  	// Storage task vulnerabilities
-  	//----------------------------------------------------------------------------
+    // Storage task vulnerabilities
+    //----------------------------------------------------------------------------
     
     {
     
@@ -353,89 +353,89 @@ include <mx>
     }
       
     //----------------------------------------------------------------------------
-  	// Control task vulnerabilities
-  	//----------------------------------------------------------------------------
+    // Control task vulnerabilities
+    //----------------------------------------------------------------------------
     
     {
     
     ! m[SoftwareModule] p[Parameter] : CompromisedControlTask(m,p) <- ControlTask(m,p) & (CodeExecution(m) | DenialOfService(m)).
 	
-	! x[HardwareComponent] m[SoftwareModule] p[Parameter] : CompromisedControlTask(m,p) <- ControlTask(m,p) & LocatedIn(m) = x & DenialOfService(x).
+    ! x[HardwareComponent] m[SoftwareModule] p[Parameter] : CompromisedControlTask(m,p) <- ControlTask(m,p) & LocatedIn(m) = x & DenialOfService(x).
     
-	! m[SoftwareModule] p[Parameter] : CompromisedControlTask(m,p) <- ? n[SoftwareModule] : (ControlTask(m,p) & ModulePrerequisiteChain(m,n) & DenialOfService(n)).
+    ! m[SoftwareModule] p[Parameter] : CompromisedControlTask(m,p) <- ? n[SoftwareModule] : (ControlTask(m,p) & ModulePrerequisiteChain(m,n) & DenialOfService(n)).
 	
-	// Transitive closure of module prerequisites
-	! m[SoftwareModule] n[SoftwareModule] : ModulePrerequisiteChain(m,n) <- ModulePrerequisite(m,n).
-	! m[SoftwareModule] n[SoftwareModule] : ModulePrerequisiteChain(m,n) <- ? l[SoftwareModule] : ModulePrerequisite(m,l) & ModulePrerequisite(l,n).
+    // Transitive closure of module prerequisites
+    ! m[SoftwareModule] n[SoftwareModule] : ModulePrerequisiteChain(m,n) <- ModulePrerequisite(m,n).
+    ! m[SoftwareModule] n[SoftwareModule] : ModulePrerequisiteChain(m,n) <- ? l[SoftwareModule] : ModulePrerequisite(m,l) & ModulePrerequisite(l,n).
 	
     }
       	  
     //----------------------------------------------------------------------------
-  	// Communication task vulnerabilities
-  	//----------------------------------------------------------------------------
+    // Communication task vulnerabilities
+    //----------------------------------------------------------------------------
     
     {
     
     ! x[HardwareComponent] y[HardwareComponent] p[Parameter] : CompromisedCommunicationTask(x,p,y) <- CommunicationTask(x,p,y) & (DenialOfService(x) | DenialOfService(y)).
     
-	! x[HardwareComponent] y[HardwareComponent] p[Parameter] : CompromisedCommunicationTask(x,p,y) <- ~Path(x,y)        
+    ! x[HardwareComponent] y[HardwareComponent] p[Parameter] : CompromisedCommunicationTask(x,p,y) <- ~Path(x,y)        
     
-	// Determination of Paths
-	! x[HardwareComponent] z[HardwareComponent] : Path(x,z) <- ? y[PhysicalChannel] : PhysicalConnection(x,y,z).
+    // Determination of Paths
+    ! x[HardwareComponent] z[HardwareComponent] : Path(x,z) <- ? y[PhysicalChannel] : PhysicalConnection(x,y,z).
     ! x[HardwareComponent] z[HardwareComponent] : Path(x,z) <- ? y[HardwareComponent] : Path(x,y) & Path(y,z).
 	  
     }
         
     //----------------------------------------------------------------------------
-  	// Authentication & Authorization rules
-  	//----------------------------------------------------------------------------
+    // Authentication & Authorization rules
+    //----------------------------------------------------------------------------
     
-	{
+    {
  	
- 	// Rule for modifying parameters
-	! u[User] m[SoftwareModule] p[Parameter] : ModifyParameter(u,m,p) <- (? x[HardwareComponent] : LocatedIn(m) = x & Access(u,x) & ControlTask(m,p) & CanAuthenticate(u,m) & IsAuthorized(u,m,p,Modify) & ~CompromisedControlTask(m,p)).
+    // Rule for modifying parameters
+    ! u[User] m[SoftwareModule] p[Parameter] : ModifyParameter(u,m,p) <- (? x[HardwareComponent] : LocatedIn(m) = x & Access(u,x) & ControlTask(m,p) & CanAuthenticate(u,m) & IsAuthorized(u,m,p,Modify) & ~CompromisedControlTask(m,p)).
  	
-	// Authentication to software modules
-	! u[User] m[SoftwareModule] n[SoftwareModule] c[Password] : CanAuthenticate(u,m) <- ((Authentication(m,c) => (ObtainsCredential(u,c) | AuthCompromised(m)) & (ModulePrerequisite(m,n) => CanAuthenticate(u,n))).
+    // Authentication to software modules
+    ! u[User] m[SoftwareModule] n[SoftwareModule] c[Password] : CanAuthenticate(u,m) <- ((Authentication(m,c) => (ObtainsCredential(u,c) | AuthCompromised(m)) & (ModulePrerequisite(m,n) => CanAuthenticate(u,n))).
 	
-	// Obtaining credentials
-	! c[Credential] u[User] : ObtainsCredential(u,c) <- HasCredential(u,c) | (? x[HardwareComponent] : Storage(x,c,ClearText) & Access(u,x) & DataLeakage(x)).
+    // Obtaining credentials
+    ! c[Credential] u[User] : ObtainsCredential(u,c) <- HasCredential(u,c) | (? x[HardwareComponent] : Storage(x,c,ClearText) & Access(u,x) & DataLeakage(x)).
 	
-	// Gaining access to components
-	! u[User] x[HardwareComponent] : Access(u,x) <- PhysicalAccess(u,x) | RemoteAccess(u,x).
+    // Gaining access to components
+    ! u[User] x[HardwareComponent] : Access(u,x) <- PhysicalAccess(u,x) | RemoteAccess(u,x).
 	
-	// Gaining Physical access to components
-	! u[User] x[HardwareComponent] t[Token] : PhysicalAccess(u,x) <- CanAccess(u,x) & (TokenRequired(x,t) => ObtainsCredential(u,t)).
+    // Gaining Physical access to components
+    ! u[User] x[HardwareComponent] t[Token] : PhysicalAccess(u,x) <- CanAccess(u,x) & (TokenRequired(x,t) => ObtainsCredential(u,t)).
 	
-	// Gaining remote access to components
-	! u[User] x[HardwareComponent] : RemoteAccess(u,x) <- (? y[HardwareComponent] m[SoftwareModule] n[SoftwareModule] l[RemoteChannel] : RemoteConnection(m,l,n) & LocatedIn(n) = x & LocatedIn(m) = y & Access(u,y)).
+    // Gaining remote access to components
+    ! u[User] x[HardwareComponent] : RemoteAccess(u,x) <- (? y[HardwareComponent] m[SoftwareModule] n[SoftwareModule] l[RemoteChannel] : RemoteConnection(m,l,n) & LocatedIn(n) = x & LocatedIn(m) = y & Access(u,y)).
 	
-	// NetworkAccess
-	! u[User] n[Network] : NetworkAccess(u,n) <- (? x[HardwareComponent] : ComponentLocation(x)=n & Access(u,x)).
+    // NetworkAccess
+    ! u[User] n[Network] : NetworkAccess(u,n) <- (? x[HardwareComponent] : ComponentLocation(x)=n & Access(u,x)).
 
- 	}
+    }
     
 }
     
 Theory T2 : V{
     //----------------------------------------------------------------------------
-  	// Queries
-  	//----------------------------------------------------------------------------    
+    // Queries
+    //----------------------------------------------------------------------------    
         
     // Only authorized users can modify parameters
     ! u[User] p[Parameter] : ( ? m[SoftwareModule] : ModifyParameter(u,m,p)) <=> Permission(u,p,Modify).
     
-	// Only authorized users can read parameters
-	! u[User] p[Parameter] : ReadParameter(u,p) <=> Permission(u,p,Read).
+    // Only authorized users can read parameters
+    ! u[User] p[Parameter] : ReadParameter(u,p) <=> Permission(u,p,Read).
 	
-	// No users can obtain credentials that were not assigned to them
-	! u[User] c[Credential] : ObtainsCredential(u,c) => HasCredential(u,c).
+    // No users can obtain credentials that were not assigned to them
+    ! u[User] c[Credential] : ObtainsCredential(u,c) => HasCredential(u,c).
 	
-	// Attackers cannot gain access to protected networks
-	! u[user] n[Network] : Protected(n) & Attacker(u) => ~NetworkAccess(u,n).
+    // Attackers cannot gain access to protected networks
+    ! u[user] n[Network] : Protected(n) & Attacker(u) => ~NetworkAccess(u,n).
 	
-	// Attackers cannot gain physical access to critical hardware components
-	! u[User] x[HardwareComponent] : Critical(x) & Attacker(u) => ~PhysicalAccess(u,x)
+    // Attackers cannot gain physical access to critical hardware components
+    ! u[User] x[HardwareComponent] : Critical(x) & Attacker(u) => ~PhysicalAccess(u,x)
  }
  
 procedure main() {
