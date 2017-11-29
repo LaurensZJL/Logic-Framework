@@ -223,21 +223,21 @@ vocabulary V {
     ! x[SystemPart] y[Vulnerability] : HasVulnerability(x,y) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & CertTupleALL(p,v2,y)).  
         
     // Scadastrangelove components
-    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleEQ(p,v2,y) & EqualVersion(v,v2)).   
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleEQ(p,v2) & EqualVersion(v,v2)).   
         
-    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleLT(p,v2,y) & LowerVersion(v,v2)).  
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleLT(p,v2) & LowerVersion(v,v2)).  
         
-    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleGT(p,v2,y) & HigherVersion(v,v2)).  
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleGT(p,v2) & HigherVersion(v,v2)).  
         
-    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleALL(p,v2,y)).  
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ComponentSpec(x,p,v) & DefaultCredentialsTupleALL(p,v2)).  
 	
-    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleEQ(p,v2,y) & EqualVersion(v,v2)).   
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleEQ(p,v2) & EqualVersion(v,v2)).   
         
-    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleLT(p,v2,y) & LowerVersion(v,v2)).  
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleLT(p,v2) & LowerVersion(v,v2)).  
         
-    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleGT(p,v2,y) & HigherVersion(v,v2)).  
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleGT(p,v2) & HigherVersion(v,v2)).  
         
-    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleALL(p,v2,y)).  
+    ! x[SystemPart] : HasVulnerability(x,DefaultPassword) <- ? p[Product] v[Version] v2[Version] : (ModuleSpec(x,p,v) & DefaultCredentialsTupleALL(p,v2)).  
 	 
     // Rules to order versions
     // Equal Versions
